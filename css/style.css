@@ -1,0 +1,444 @@
+/* navbar */
+html {
+  scroll-behavior: smooth;
+}
+.navbar{
+    margin-top: 35px;
+}
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    /* sticky or fixed are fine */
+    position: fixed;
+    top: 0;
+    height: 69px;
+    width: 100%;
+    background: transparent; /* background when scroll is in the top */
+    transition: background .5s; control how smooth the background changes
+    transition: margin-top .5s; /* control how smooth the background changes */
+  }
+  
+  nav.scrolled {
+      margin-top:0;
+      background-color: #000000d5;
+  }
+  
+  main {
+    height: 200vh;
+  }
+
+  .nav-link.active{
+      color: rebeccapurple;
+  }
+.nav-link{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+}
+.logo {
+    height: 55px;
+    width: 150px;
+}
+/* last navbar */
+
+/* content 1 */
+.carousel{
+    position:relative;
+    z-index: -99;
+    margin-top: -200px;
+    background:rgba(0,0,0,0.6);
+
+}
+.carousel img{
+    height: 1000px !important;
+    background:rgba(0,0,0,0.6);
+
+}
+.carousel-item:after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+ 
+  .brand-nama-1{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 150px;
+      margin-top: -600px !important;
+  }
+  .brand-p-1{
+      font-family: Poppins;
+      font-size: 17px;
+  }
+
+  .brand-nama-2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    margin-top: -600px !important;
+    margin-left: -490px !important;
+}
+.brand-p-2{
+    font-family: Poppins;
+    font-size: 17px;
+}
+.btn-hero{
+    background-color: #F1CF69;
+    color: rgb(107, 96, 64);
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 15px;
+    min-height: 20px;
+    min-width: 100px;
+}
+.btn-hero:hover{
+    background-color: rgb(107, 96, 64);
+    color: rgb(228, 228, 228);
+    font-weight: 600;
+}
+
+.chevron-header{
+    margin-top: -170px;
+}
+/* last content 1 */
+
+/* content 2 */
+.sejarah{
+    margin-top: 200px;
+}
+.sejarah-icon{
+    margin-left: -75px;
+}
+.sejarah-h3{
+    font-weight: 700;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.sejarah-h3-icon{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.sejarah-h4{
+    font-size: 15PX;
+    font-weight: 500;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.sejarah-p{
+    font-size: 15PX;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+
+.sejarah-ic{
+    width: 81px;
+    height: 72px;
+}
+/* last content 2 */
+
+/* content 3 */
+.produk{
+    margin-top: 80px !important;
+}
+.produk-h1{
+    font-size: 90PX;
+    font-weight: 900;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.produk-h2{
+    margin-top: 50px;
+    font-size: 25PX;
+    font-weight: 700;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.produk-p{
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.produk_img{
+    margin-top: 50px !important;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    width: 670px;
+}
+/* last content 3 */
+
+/* produk 2 */
+.produk-2{
+    margin-top: 90px;
+}
+.produk-h1-2{
+    font-size: 90PX;
+    font-weight: 900;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+figure.snip {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  figure.snip * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  figure.snip.yellow {
+    background: #F1CF69;
+  }
+  
+  figure.snip img {
+    max-width: 100%;
+    position: relative;
+    opacity: 0.4;
+  }
+  
+  figure.snip figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  figure.snip h2 {
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    display: inline-block;
+    background: #000000;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    margin: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  
+  figure.snip h2 span {
+    font-weight: 800;
+  }
+  
+  figure.snip:before {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #ffffff;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: rotate(110deg) translateY(-50%);
+    transform: rotate(110deg) translateY(-50%);
+  }
+  
+  figure.snip a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  figure.snip:hover img,
+  figure.snip.hover img {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  
+  figure.snip:hover h2,
+  figure.snip.hover h2 {
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
+  }
+  
+  figure.snip:hover:before,
+  figure.snip.hover:before {
+    -webkit-transform: rotate(110deg) translateY(-150%);
+    transform: rotate(110deg) translateY(-150%);
+  }  
+/* last produk 2 */
+
+/* blog */
+.blog{
+    margin-top: 150px;
+}
+
+.produk-h2-blog{
+    font-size: 40PX;
+    font-weight: 900;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+/* last blog */
+
+/* testomoni */
+.container .box {
+    position: relative;
+      padding: 40px;
+      transition: 0.5s;
+      text-align: center;
+      background: #fff;
+      padding-top: 100px;
+    }
+      
+      .container .box:hover {
+        background: #EECC68;
+      }
+    
+    .container .box p {
+      margin: 0;
+      padding: 0;
+      transition: 0.5s;
+    }
+    
+    .container .box h4 {
+      margin: 20px 0 0;
+      padding: 0;
+      transition: 0.5s;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: rgb(190, 163, 79);
+    }
+    
+    .container .box h4 span {
+        font-family: Poppins,sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+      transition: 0.5s;
+    }
+    
+    .container .box:hover p,
+    .container .box:hover h4,
+    .container .box:hover h4 span
+    {
+      color: #fff;
+    }
+    
+    .container .box .img-box img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .container .box .img-box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -60px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .container .box:before {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 80px;
+      height: 80px;
+      background: url(https://static.thenounproject.com/png/275849-200.png);
+      background-size: cover;
+      opacity: 0.1;
+      pointer-events: none;
+      transition: 0.5s;
+    }
+    
+    .container .box:hover:before {
+    transform: translateY(-60px);
+    opacity: 1;
+    }
+    
+    .container .box:after {
+      content: '';
+      position: absolute;
+      bottom: 20px;
+     left: 40px;
+      width: 80px;
+      height: 80px;
+      background: url(https://static.thenounproject.com/png/275849-200.png);
+      background-size: cover;
+      opacity: 0.1;
+      pointer-events: none;
+      transition: 0.5s;
+      transform: rotate(180deg) translateY(0px);
+    }
+    
+    .container .box:hover:after {
+     transform: rotate(180deg) translateY(-60px);
+    opacity: 1;
+    }
+     
+/* last testomoni */
+
+/* kontak */
+.kontak{
+    margin-top: 150px;
+}
+.produk-h2-kontak{
+    margin-top: 50px;
+    font-size: 25PX;
+    font-weight: 700;
+    font-family: Poppins,sans-serif;
+    color: rgb(223, 223, 223);
+}
+.produk-h2-map{
+    margin-top: 50px;
+    font-size: 25PX;
+    font-weight: 700;
+    font-family: Poppins,sans-serif;
+    color: #333;
+}
+.produk-p-kontak{
+    font-family: Poppins,sans-serif;
+    color: rgb(223, 223, 223);
+}
+.box-kontak{
+background-color: #529077;
+}
+.box-map{
+    background-color: #EECC68;
+    }
+/* last kontak */
+
+/* footer */
+.footer{
+    position: absolute;
+    height: 80px;
+    background-color: #333;
+}
+.text-footer{
+    align-content: center;
+    margin-top: 30px;
+    font-size: 15PX;
+    font-family: Poppins,sans-serif;
+    color: rgb(233, 233, 233);
+}
+/* last footer */
+
