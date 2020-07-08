@@ -1,2 +1,2 @@
 # Jaelanis
-CI 3
+Front Page NO RESPONSIVE
