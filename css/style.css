@@ -113,6 +113,7 @@ nav {
 .sejarah-icon{
     margin-left: -75px;
 }
+
 .sejarah-h3{
     font-weight: 700;
     font-family: Poppins,sans-serif;
@@ -169,7 +170,7 @@ nav {
     left: 50%;
     bottom: 0;
     right: 0;
-    width: 670px;
+    width: 650px;
 }
 /* last content 3 */
 
@@ -442,3 +443,112 @@ background-color: #529077;
 }
 /* last footer */
 
+
+
+/* responsive */
+@media (max-width: 575.98px) { 
+.nav-link{
+  margin-left: -40px;
+}
+  /* navbar */
+  .navbar-collapse {
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 200px !important;
+    background-color: rgba(0, 0, 0, 0.534);
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    padding: 20px 10px;
+}
+.btn-hero{
+  margin-left: 10pxs;
+}
+  nav.scrolled {
+    margin-top:0px;
+    background-color: #000000d5;
+}
+  .logo {
+    height: 40px;
+    width: 110px;
+}
+  .carousel{
+    position:relative;
+    z-index: -99;
+    background:rgba(0,0,0,0.6);
+    width: auto !important;
+}
+.carousel img{
+  height: 800px !important;
+}
+.brand-nama-1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  margin-top: -380px !important;
+}
+.brand-nama-2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: -380px !important;
+  margin-left: -15px !important;
+}
+
+.sejarah-h4{
+  font-size: 15PX;
+  font-weight: 500;
+  font-family: Poppins,sans-serif;
+  color: #333;
+  margin-top:140px !important ;
+  margin-left: -85px !important;
+}
+
+.sejarah-p{
+  margin-left: -85px !important;
+}
+
+/* last navbar */
+/* sejarah */
+.sejarah-icon{
+  display: none;
+}
+.sejarah-ic{
+  margin-top: 30px;
+}
+/* last sejarah */
+/* produk */
+.produk-h1,.produk-h1-2{
+  font-size: 50PX;
+  font-weight: 900;
+  font-family: Poppins,sans-serif;
+  color: #333;
+}
+
+.produk{
+ display: none;
+}
+.produk-2{
+  display: none;
+}
+/* last produk */
+/* blog */
+.blog{
+  display: none;
+}
+
+.blog-mobile{
+  margin-top: 100px;
+}
+
+.testimoni{
+  display: none !important;
+}
+/* last blog */
+.kontak{
+  display: none;
+}
+.testimon{
+  display: none;
+}
+}
